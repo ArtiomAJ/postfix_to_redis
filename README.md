@@ -1,6 +1,5 @@
 # postfix_to_redis
 
-TODO: Enter the cookbook description here.
 For test purposes and ease of use the root user is used:
 Thus, all the mails send to root@virtual.domain.tld will be stored in REDIS.
 In order to retrieve emails from REDIS for specific user use read_from_redis.rb  script :
