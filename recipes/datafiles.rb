@@ -1,5 +1,17 @@
 user = node['current_user']
 
+unless Dir.exist? "/home/#{user}"
+directory "/home/#{user}" do
+  user node[:current_user]
+  group node[:root_group]
+  mode '0755'
+  action :create
+end
+end
+
+
+
+
 template "/home/#{user}/put_data_to_redis.rb" do
   source 'put_data_to_redis.rb'
   user node[:current_user]

@@ -6,9 +6,6 @@
 #
 
 
-file "/tmp/local_mode.txt" do
-    content "created by chef client local mode"
-end
 
 include_recipe 'postfix_to_redis::ruby'
 include_recipe 'postfix_to_redis::redis'
