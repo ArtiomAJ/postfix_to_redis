@@ -1,5 +1,4 @@
-yum_package 'postfix' do
- action :install
+package 'postfix' do
 end
 
 service 'postfix' do
