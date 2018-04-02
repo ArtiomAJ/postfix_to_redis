@@ -1,5 +1,4 @@
-yum_package 'redis' do
- action :install
+package 'redis' do
 end
 
 service 'redis' do
